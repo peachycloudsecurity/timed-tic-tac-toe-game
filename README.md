@@ -17,7 +17,7 @@ This is a simple **Timed Tic Tac Toe game** built with HTML, CSS, and JavaScript
 ### 2. Clone the Repository
 ```bash
 git clone https://github.com/peachycloudsecurity/timed-tic-tac-toe-game
-cd timed-tic-tac-toe-game
+cd timed-tic-tac-toe-game/terraform
 ```
 
 ### 3. Initialize and Apply Opentofu
