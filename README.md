@@ -34,8 +34,10 @@ tofu apply --auto-approve
 - Opentofu will output a website URL like:
 
 ```
-website_url = http://tic-tac-toe-xxxx.s3-website-us-east-1.amazonaws.com
+website_url = http://peachycloudsecurity-xxxx.s3-website-us-east-1.amazonaws.com
 ```
+
+![alt text](image.png)
 
 
 #### Reference:
