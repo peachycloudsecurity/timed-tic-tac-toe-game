@@ -1,6 +1,6 @@
 # Timed Tic Tac Toe Game - Hackathon Submission
 
-This is a simple **Tic Tac Toe game** built with HTML, CSS, and JavaScript. The game features:
+This is a simple **Timed Tic Tac Toe game** built with HTML, CSS, and JavaScript. The game features:
 1. A playable board where X's and O's vanish after 3 moves.
 2. A scoreboard that tracks the last 10 winners using local storage.
 3. Hosted on **AWS S3** as a static website using Terraform.
