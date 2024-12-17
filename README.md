@@ -37,7 +37,7 @@ tofu apply --auto-approve
 website_url = http://peachycloudsecurity-xxxx.s3-website-us-east-1.amazonaws.com
 ```
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 #### Reference:
