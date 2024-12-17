@@ -1,58 +1,114 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
 }
 
 h1 {
-    margin-top: 20px;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px #b2bec3;
 }
 
+/* Game Grid Styling */
 #game {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
+    grid-gap: 8px;
     justify-content: center;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #fdfdfd;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
     font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cell:hover {
+    background: #ecf0f1;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .cell.dimmed {
-    color: #ddd;
+    color: #95a5a6;
+    background: #f0f0f0;
 }
 
 .cell.winner {
-    background: #90ee90;
+    background: #2ecc71;
+    color: #ffffff;
+    border: 2px solid #27ae60;
+    box-shadow: 0 0 10px #27ae60;
 }
 
+/* Status Text */
 #status {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2980b9;
 }
 
+/* Table Styling */
 table {
-    margin: 20px auto;
+    margin: 30px auto;
     border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
     text-align: center;
+    font-size: 1.1rem;
+}
+
+th {
+    background-color: #2980b9;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+tr:nth-child(even) td {
+    background-color: #d5dbdb;
+}
+
+tr:hover td {
+    background-color: #f1c40f;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Footer or Small Notes */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
 }
